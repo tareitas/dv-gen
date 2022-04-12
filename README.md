@@ -27,5 +27,6 @@ Created by Elborikua & Vay3t
 Diccionario de RUTs
 
 ```bash
+$ sudo pip3 install exrex
 $ exrex -m 10 "1800[0-9]{4}" | xargs -I@ bash -c "python3 dv-gen.py @"
 ```
