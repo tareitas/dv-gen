@@ -28,5 +28,5 @@ Diccionario de RUTs
 
 ```bash
 $ sudo pip3 install exrex
-$ exrex -m 10 "1800[0-9]{4}" | xargs -I@ bash -c "python3 dv-gen.py @"
+$ seq 1 100 | xargs -I{} bash -c 'exrex -r "1[0-9]{7}"' | xargs -I@ bash -c "python3 dv-gen.py @ .-" > ruts.test
 ```
